@@ -1,0 +1,23 @@
+<%- include('partials/header') -%>
+  <div class="d-flex flex-column justify-content-center entry__Title">
+    <h2 style="color: #420000">New Entry</h2>
+  </div>
+
+  <div class="entry__Container">
+    <form action="/compose" method="post">
+      <div class="form-group">
+        <!-- <label for="compose1">Title</label> -->
+        <h3>Title</h3>
+        <input name="postTitle" type="text" class="form-control" id="compose1" placeholder="Enter Title" autocomplete="off" required>
+      </div>
+      <div class="form-group">
+        <!-- <label for="post1">Post</label> -->
+        <h3>Post</h3>
+        <textarea name="postBody" type="text" class="form-control" id="post1" placeholder="Post here!" rows="15"
+          autocomplete="off" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-secondary">Publish</button>
+    </form>
+  </div>
+
+<%- include('partials/footer') -%>
