@@ -87,6 +87,10 @@ body {
     width: 20%;
 }
 
+.btn{
+    width: 75px !important;
+}
+
 .btn-red {
     color: #fff;
     background-color: #420000;
@@ -104,7 +108,6 @@ body {
 }
 
 .btn-gray {
-    width: 75px;
     color: #000000;
     background-color: #eae9e9;
 
