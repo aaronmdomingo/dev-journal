@@ -52,11 +52,15 @@ body {
     height: 40%;
 }
 
-.navbar-nav li a {
-    transition: all 0.2s !important;
+.navbar__Link-text {
+    transition: all 0.2s;
 }
-.navbar-nav  li a:hover {
-    color: #1abc9c !important;
+.navbar__Link-text:hover {
+    color: #fff !important;
+    transform: scale(1.1);
+}
+.navbar__Link-text:active {
+    transform: scale(1);
 }
 
 .dateSpan {
@@ -85,6 +89,41 @@ body {
 
 .post__Buttons {
     width: 20%;
+}
+
+.btn{
+    width: 75px !important;
+}
+
+.btn-red {
+    color: #fff;
+    background-color: #420000;
+
+    transition: all 0.2s;
+}
+
+.btn-red:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.btn-red:active {
+    transform: scale(1);
+}
+
+.btn-gray {
+    color: #000000;
+    background-color: #eae9e9;
+
+    transition: all 0.2s;
+}
+
+.btn-gray:hover {
+    transform: scale(1.1);
+}
+
+.btn-gray:active {
+    transform: scale(1.1);
 }
 /* .footer {
 	position: absolute;

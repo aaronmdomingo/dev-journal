@@ -15,7 +15,7 @@
 <h3 class="rounded d-flex align-items-center justify-content-between posts__Title"style="background-color: #eae9e9; color: #420000"><%=post.title%> <span class="dateSpan"><%=post.date%></span></h3>
 <p class="post__Content">
 <%=post.content.substring(0, 100) + "..."%>
-<a style="color: #420000;" href="/posts/<%=post._id%>">Read More</a>
+<a class="readMore" style="color: #420000;" href="/posts/<%=post._id%>">Read More</a>
 </p>
 </div>
 

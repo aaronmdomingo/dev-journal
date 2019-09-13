@@ -1,6 +1,6 @@
 <%- include('partials/header') -%>
 <div class="d-flex flex-column justify-content-center entry__Title">
-  <h2 style="color: #420000">Edit Entry</h2>
+  <h2 style="color: #420000">Edit Entry - "<%=title%>"</h2>
 </div>
 
 <div class="entry__Container">
@@ -18,7 +18,9 @@
       <textarea name="editBody" type="text" class="form-control" id="post1" placeholder="Post here!" rows="15"
         autocomplete="off" required><%=body%></textarea>
     </div>
-    <button type="submit" class="btn btn-secondary">Publish</button>
+    <div class="d-flex justify-content-center">
+      <button type="submit" class="btn btn-red">Update</button>
+    </div>
   </form>
 </div>
 
