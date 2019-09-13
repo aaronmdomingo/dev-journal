@@ -86,6 +86,38 @@ body {
 .post__Buttons {
     width: 20%;
 }
+
+.btn-red {
+    color: #fff;
+    background-color: #420000;
+
+    transition: all 0.2s;
+}
+
+.btn-red:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.btn-red:active {
+    transform: scale(1);
+}
+
+.btn-gray {
+    width: 75px;
+    color: #000000;
+    background-color: #eae9e9;
+
+    transition: all 0.2s;
+}
+
+.btn-gray:hover {
+    transform: scale(1.1);
+}
+
+.btn-gray:active {
+    transform: scale(1.1);
+}
 /* .footer {
 	position: absolute;
 	text-align: center;
