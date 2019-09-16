@@ -17,6 +17,11 @@ body {
 
 .main__Title {
     font-size: 2.5rem;
+    transition: all 0.2s;
+}
+
+.main__Title:hover {
+    letter-spacing: 2.5px;
 }
 
 .main__Container {
@@ -100,6 +105,10 @@ body {
     background-color: #420000;
 
     transition: all 0.2s;
+}
+
+.btn:focus {
+    outline: none !important;
 }
 
 .btn-red:hover {
