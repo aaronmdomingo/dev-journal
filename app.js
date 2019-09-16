@@ -79,10 +79,9 @@ app.post("/compose", function(req, res){
   let now, months, month, year, day, current;
 
   now = new Date()
-  months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-  month = now.getMonth();
+  month = now.getMonth() + 1;
   year = now.getFullYear();
-  day = now.getDay();
+  day = now.getDate();
   current = `${month} / ${day} / ${year}`;
 
   const post = new Post ({
