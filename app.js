@@ -46,13 +46,6 @@ app.get('/', (req, res) => {
   })
 })
 
-//CONTACT
-app.get('/contact', (req, res) => {
-  res.render('contact', {
-    about: aboutContent
-  })
-})
-
 //ALL ENTRIES
 app.get('/all', (req, res) => {
   Post.find({}, (err, foundPosts) => {
