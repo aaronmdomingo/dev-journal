@@ -40,6 +40,15 @@ body {
     height: 80%;
 }
 
+.postList__Title {
+    color: #B10E20 !important;
+    transition: all 0.2s;
+}
+
+.postList__Title:focus {
+    color: #B10E20;
+}
+
 .posts__Title {
     height: 60%;
     text-transform: capitalize;
@@ -90,7 +99,7 @@ body {
 
 .btn-red {
     color: #fff;
-    background-color: #420000;
+    background-color: #B10E20;
 
     transition: all 0.2s;
 }
@@ -121,4 +130,11 @@ body {
 
 .btn-gray:active {
     transform: scale(1.1);
+}
+
+input:focus,
+textarea:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
 }
