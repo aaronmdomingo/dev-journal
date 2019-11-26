@@ -1,4 +1,5 @@
 <%- include('partials/header') -%>
+
 <div class="d-flex flex-column justify-content-center entry__Title">
   <h2 style="color: #420000">Edit Entry - "<%=title%>"</h2>
 </div>
@@ -6,14 +7,12 @@
 <div class="entry__Container">
   <form action="/edit" method="post">
     <div class="form-group">
-      <!-- <label for="compose1">Title</label> -->
       <input name="oldTitle" value="<%=id%>" class='d-none'>
       <h3>Title</h3>
       <input name="editTitle" type="text" class="form-control" id="compose1" placeholder="Enter Title"
         autocomplete="off" value="<%=title%>" required>
     </div>
     <div class="form-group">
-      <!-- <label for="post1">Post</label> -->
       <h3>Post</h3>
       <textarea name="editBody" type="text" class="form-control" id="post1" placeholder="Post here!" rows="15"
         autocomplete="off" required><%=body%></textarea>
