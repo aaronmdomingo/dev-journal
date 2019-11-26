@@ -1,6 +1,6 @@
 <%- include("partials/header"); -%>
-<h2 class="font-weight-italic container-fluid">All Entries</h2>
 
+<h2 class="font-weight-italic container-fluid">All Entries</h2>
   <div class="container-fluid d-flex flex-column justify-content-start all__Container overflow-auto">
   <%  posts.forEach(function(post){ %>
   <div class="d-flex flex-column justify-content-center">
@@ -12,9 +12,6 @@
       <a style="color: #420000;" href="/posts/<%=post._id%>">Read More</a>
     </p>
   </div>
-
-
-
   <% }) %>
 </div>
 
