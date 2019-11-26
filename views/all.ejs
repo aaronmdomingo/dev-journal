@@ -4,11 +4,11 @@
   <div class="container-fluid d-flex flex-column justify-content-start all__Container overflow-auto">
   <%  posts.forEach(function(post){ %>
   <div class="d-flex flex-column justify-content-center">
-    <h4 class="rounded d-flex align-items-center justify-content-between posts__Title"
-      style="background-color: #eae9e9; color: #420000"><%=post.title%> <span class="dateSpan"><%=post.date%></span>
+    <h4 class="rounded d-flex align-items-center justify-content-between posts__Title">
+      <a href="/posts/<%=post._id%>" class="postList__Title"><%=post.title%> </a> <span class="dateSpan"><%=post.date%></span></span>
     </h4>
     <p class="post__Content">
-      <%=post.content.substring(0, 250) + "..."%>
+      <%=post.content.substring(0, 100) + "..."%>
       <a style="color: #420000;" href="/posts/<%=post._id%>">Read More</a>
     </p>
   </div>
