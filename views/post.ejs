@@ -7,16 +7,12 @@
     </div>
     <div class="post__Buttons d-flex justify-content-around">
             <a href="/edit/<%=id%>" class="btn btn-gray">Edit</a>
-            <!-- <a href="/delete/<%=id%>" class="btn btn-red">Delete</a> -->
             <button type="button" class="btn btn-red" data-toggle="modal" data-target="#deleteModal">Delete</button>
-
     </div>
 </div>
 <div class="post__Container rounded" style="border: 2px solid #420000">
     <p class="container-fluid overflow-auto"> <%= body  %> </p>
 </div>
-
-
 <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">

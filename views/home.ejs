@@ -1,15 +1,13 @@
 
 <%- include("partials/header"); -%>
+
 <div class="container-fluid d-flex flex-column justify-content-center helloMain__Container">
 <h2 class="font-weight-italic">Welcome!</h2>
 <p> <%= startingContent %> </p>
 </div>
-
 <div class="container-fluid d-flex flex-column justify-content-around postMain__Container">
 <h2 class="font-weight-italic latest__Title d-flex align-items-center">Latest Entries</h2>
-
 <div class="postList__Container d-flex flex-column justify-content-start">
-
 <%  posts.forEach(function(post){ %>
 <div class="d-flex flex-column">
 <h3 class="rounded d-flex align-items-center justify-content-between posts__Title"style="background-color: #eae9e9; color: #420000"><%=post.title%> <span class="dateSpan"><%=post.date%></span></h3>
@@ -18,9 +16,6 @@
 <a class="readMore" style="color: #420000;" href="/posts/<%=post._id%>">Read More</a>
 </p>
 </div>
-
-
-
 <% }) %>
 </div>
 </div>
